@@ -10,4 +10,8 @@ print(f)
 c <- "Hello World"
 print(c)
 
+n <- 10
+cat('n', n, '\n')
+0.3 -> s
+cat('s', s, '\n')
 
