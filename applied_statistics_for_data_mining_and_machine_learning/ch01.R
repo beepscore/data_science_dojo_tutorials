@@ -48,7 +48,7 @@ x = 1:20
 print(x)
 # [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
 
-> # list
+# list
 x <- list(1, "a", TRUE, 1 + 4i)
 print(x)
 # [[1]]
@@ -62,3 +62,14 @@ print(x)
 # 
 # [[4]]
 # [1] 1+4i
+
+# factor
+x <- factor(c("yes", "yes", "no", "yes", "no"))
+print(x)
+# [1] yes yes no  yes no
+# Levels: no yes
+table(x)
+print(x)
+#  no yes
+#   2   3
+
