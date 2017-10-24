@@ -21,10 +21,12 @@ cat('n', n, '\n')
 cat('s', s, '\n')
 m = TRUE
 
+# Dates and times
+
 x <- as.Date("2017-10-23")
 
 x <- Sys.time()
-> x
+print(x)
 # [1] "2017-10-24 02:55:54 GMT"
 
 p <- as.POSIXlt(x)
@@ -33,3 +35,15 @@ names(unclass(p))
 # [9] "isdst"  "zone"   "gmtoff"
 p$sec
 # [1] 54.43315
+
+# Compound objects
+
+x <- vector("numeric", length = 10)
+print(x)
+
+x <- c(0.5, 0.6)
+print(x)
+# [1] 0.5 0.6
+x = 1:20
+print(x)
+# [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
